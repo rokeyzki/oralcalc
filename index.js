@@ -232,7 +232,7 @@ var app = new Vue({
 		fontsize: 22,
 		fontfamily: '宋体',
 		cellPadding: 6,
-		cellSpacing: 12, // 8,
+		cellSpacing: 10, // 8,
 		res: [],
 		appendemptyrows: false,
 		report: {
