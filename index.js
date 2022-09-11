@@ -194,7 +194,7 @@ var app = new Vue({
 		isadd: true,
 		issub: true,
 		ismul: true,
-		isdiv: true,
+		isdiv: false,
 		level: '20',
 		rule: '1',
 		whichcond: '',
@@ -207,17 +207,17 @@ var app = new Vue({
 		range_op: [],
 
 		// 加法
-		defrange_add: [{min: 0, max: 100}, {min: 0, max: 100}],
-		result_add: {min: 0, max: 200},
+		defrange_add: [{min: 2, max: 9}, {min: 2, max: 9}],
+		result_add: {min: 10, max: 20},
 		range_add: [],
 
 		// 减法
-		defrange_sub: [{min: 0, max: 200}, {min: 0, max: 100}],
-		result_sub: {min: 0, max: 100},
+		defrange_sub: [{min: 11, max: 20}, {min: 2, max: 9}],
+		result_sub: {min: 0, max: 20},
 		range_sub: [],
 
 		// 乘法
-		defrange_mul: [{min: 0, max: 9}, {min: 0, max: 9}],
+		defrange_mul: [{min: 2, max: 9}, {min: 2, max: 9}],
 		result_mul: {min: 4, max: 81},
 		range_mul: [],
 
@@ -226,13 +226,13 @@ var app = new Vue({
 		result_div: {min: 2, max: 9},
 		range_div: [],
 
-		borrow: 'random', // 减法借位设置
-		carry: 'random', // 加法进位设置
+		borrow: 'all', // 'random', // 减法借位设置
+		carry: 'all', // 'random', // 加法进位设置
 		nomod: 'yes', // 除法余数设置
 		fontsize: 22,
 		fontfamily: '宋体',
 		cellPadding: 6,
-		cellSpacing: 8,
+		cellSpacing: 12, // 8,
 		res: [],
 		appendemptyrows: false,
 		report: {
@@ -247,7 +247,7 @@ var app = new Vue({
 		}
 	},
 	created: function () {
-		this.itemcount = 3;
+		this.itemcount = 2;
 		this.is_login = this.curr_user() ? true : false;
 		this.myCounter();
 	},

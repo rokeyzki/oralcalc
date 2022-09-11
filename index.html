@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>口算题生成程序</title>
+    <title>口算题生成器</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
     <script src="vue.min.js"></script>
@@ -369,8 +369,8 @@ var _hmt = _hmt || [];
                     <div class="panel panel-primary">
                         <div class="panel-heading">
                             <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
-                            <b>小学生口算题自动生成程序 V1.1 by <a style="color:white;" href="https://www.imgxw.com">&copy;高大科技</a></b>
-                            <span class="badge" style="float:right">访客数：{{mycounter}}</span>
+                            <b>小学生口算题自动器 v0.0.1 中秋节临时版</b>
+                            <!-- <span class="badge" style="float:right">访客数：{{mycounter}}</span> -->
                         </div>
                         <div class="panel-body">
 
@@ -405,7 +405,7 @@ var _hmt = _hmt || [];
                                             <label class="">每页行数：</label>
                                             <div class="input-group">
                                                 <input type="number" class="form-control" name="count" v-model="pagerows" />
-                                                <span class="input-group-addon">(仅IE有效)
+                                                <span class="input-group-addon">
                                                     共 {{parseInt((res.length + (cols-0) - 1) / (cols-0))}} 行
                                                     {{parseInt(((parseInt(res.length + (cols-0) - 1) / (cols-0)) +
                                                     (pagerows -
@@ -484,12 +484,12 @@ var _hmt = _hmt || [];
                                 打印试题
                             </button>
                             <span style="float:right">
-                            <a target="_blank" href="https://github.com/hldgaofeng/oralcalc/issues">
+                            <!-- <a target="_blank" href="https://github.com/hldgaofeng/oralcalc/issues">
                                 <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
                                 反馈问题</a>
                             <a href="mailto:hldgaofeng@qq.com">
                                 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                                联系作者</a></span>
+                                联系作者</a></span> -->
                         </div>
                     </div>
                 </div>
@@ -505,8 +505,8 @@ var _hmt = _hmt || [];
                 <tr>
                     <th :colspan="cols" style="text-align:center;">
                         <div class="print-repeat" contenteditable="true">
-                            <h3>口算（100以内加减法混合运算）</h3>
-                            姓名：__________ 日期：____月____日 时间：________ 对题：____道<br /><br />
+                            <h3>小豆豆的口算练习（20以内加减法和九九乘法运算）</h3>
+                            日期：____月____日 时间：________ 对题：____道<br /><br />
                         </div>
                     </th>
                 </tr>
