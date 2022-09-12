@@ -208,12 +208,12 @@ var app = new Vue({
 
 		// 加法
 		defrange_add: [{min: 2, max: 9}, {min: 2, max: 9}],
-		result_add: {min: 10, max: 20},
+		result_add: {min: 11, max: 20},
 		range_add: [],
 
 		// 减法
 		defrange_sub: [{min: 11, max: 20}, {min: 2, max: 9}],
-		result_sub: {min: 0, max: 20},
+		result_sub: {min: 1, max: 9},
 		range_sub: [],
 
 		// 乘法
